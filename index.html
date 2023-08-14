@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-tasbih</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .lato-font{
+        font-family: 'Lato', sans-serif;
+    }
+    </style>
+    
+
+</head>
+<body class="lato-font">
+    <header>
+        <div>
+            <h1 class=" flex justify-center my-16 font-black text-5xl lg:text-7xl text-teal-600">Digital Tasbih</h1>
+        </div>
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-20 px-20 ">
+                <!-- card 1 -->
+                <div class="card bg-neutral text-neutral-content">
+                    <div class="card-body space-y-6 items-center text-center">
+                      <h2 class="text-3xl lg:text-4xl font-extrabold">Subhan Allah</h2>
+                      <p id="subhan-allah-display" class="text-4xl font-extrabold">0</p>
+                      <div class="justify-end space-y-2 lg:space-x-3">
+                        <button id="subhan-allah-plus-btn" class="btn btn-outline btn-accent px-16"">plus</button>
+                        <button id="subhan-allah-minus-btn" class="btn btn-outline btn-accent px-16" >Minus</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card 2 -->
+                <div class="card bg-neutral text-neutral-content">
+                    <div class="card-body space-y-6 items-center text-center">
+                      <h2 class="text-3xl lg:text-4xl font-extrabold">Alhamdulilah</h2>
+                      <p  id="alhamdulilah-display" class="text-4xl font-extrabold">0</p>
+                      <div class="justify-end space-y-2 lg:space-x-3">
+                        <button id="alhamdulilah-plus-btn" class="btn btn-outline btn-accent px-16"">plus</button>
+                        <button id="alhamdulilah-minus-btn" class="btn btn-outline btn-accent px-16" >Minus</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card 3 -->
+                <div class="card bg-neutral text-neutral-content ">
+                    <div class="card-body space-y-6 items-center text-center">
+                      <h2  class="text-3xl lg:text-4xl font-extrabold">Allahuakber</h2>
+                      <p id="allahuakber-display" class="text-4xl font-extrabold">0</p>
+                      <div class="justify-end space-y-2 lg:space-x-3">
+                        <button id="allahuakber-plus-btn" class="btn btn-outline btn-accent px-16"">plus</button>
+                        <button id="allahuakber-minus-btn" class="btn btn-outline btn-accent px-16" >Minus</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="flex justify-center my-5 lg:mt-16">
+                <button id="reset-btn" class="btn bg-red-400">Reset All Tasbih</button>
+            </div>
+
+        </section>
+    </header>
+    <script src="style.js"></script>
+</body>
+</html>
